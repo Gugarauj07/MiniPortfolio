@@ -102,6 +102,71 @@ img {
 }
 
 /*=============== PROFILE ===============*/
+.profile{
+    position: relative;
+    padding-top: 3.5rem;
+}
+
+.profile_container {
+    row-gap: 2rem;
+}
+
+.profile_data {
+    display: grid;
+    text-align: center;
+}
+
+.profile_perfil {
+    width: 100px;
+    height: 100px;
+    background: linear-gradient(180deg, 
+    hsla(var(--hue), var(--sat), var(--lig), 1) 0%, 
+    hsla(var(--hue), var(--sat), var(--lig), 0.5) 100%);
+    border-radius: 50%;
+    overflow: hidden;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.profile_border {
+    border: 3.5px solid var(--first-color);
+    justify-self: center;
+    width: 115px;
+    height: 115px;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    margin-bottom: .75rem;
+}
+
+.profile_name {
+    font-size: var(--h2-font-size);
+}
+
+.profile_profession {
+    font-size: var(--smaller-font-size);
+    font-weight: 500;
+    color: var(--text-color);
+    margin-bottom: 1rem;
+}
+
+.profile_social {
+    display: flex;
+    justify-content: center;
+    column-gap: .75rem;
+}
+
+.profile_social-link {
+    color: var(--title-color);
+    font-size: 1.25rem;
+    transition: .3s;
+}
+
+.profile_social-link:hover {
+    color: var(--first-color);
+}
+
 
 
 /*=============== BUTTONS ===============*/

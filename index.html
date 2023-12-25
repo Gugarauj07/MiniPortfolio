@@ -46,11 +46,11 @@
                 </div>
 
                 <div class="profile_buttons">
-                    <a href="assets/pdf/CV_Gustavo.pdf" target="_blank" class="button button--flex">
+                    <a href="assets/pdf/CV_Gustavo.pdf" target="_blank" class="button ">
                         Download CV <i class="ri-download-line button_icon"></i>
                     </a>
-                    <a href="https://api.whatsapp.com/send?phone=5592981499711" class="button button--flex">
-                        Contate-me <i class="ri-whatsapp-line button_icon"></i>
+                    <a href="https://api.whatsapp.com/send?phone=5592981499711" target="_blank" class="button button_small button_gray">
+                        <i class="ri-whatsapp-line button_icon"></i>
                     </a>
                 </div>
 
@@ -62,13 +62,62 @@
         <main class="main">
             <section class="filters container">
                 <!--=============== FILTERS TABS ===============-->
+                <ul class="filters_content">
+                    <button class="filters_button" data-target="#projects">
+                        Projetos
+                    </button>
+                    <button class="filters_button" data-target="#skills">
+                        Habilidades
+                    </button>
+                </ul>
 
-                <div class="filters__sections">
+                <div class="filters_sections">
                     <!--=============== PROJECTS ===============-->
+                    <div class="projects_content grid" data-content id="projects">
+                        <article class="projects_card">
+                            <img src="assets/img/GugaHubPrint.png" alt="" class="projects_img">
+                            <div class="projects_modal">
+                                <div>
+                                    <span class="projects_subtitle">GugaHub</span>
+                                    <h3 class="projects_title">Social Network</h3>
+                                    <a href="" class="projects_button button button_small">
+                                        <i class="ri-link"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="projects_card">
+                            <img src="assets/img/LinkNestPrint.png" alt="" class="projects_img">
+                            <div class="projects_modal">
+                                <div>
+                                    <span class="projects_subtitle">LinkNest</span>
+                                    <h3 class="projects_title">Compartilhamento de Links</h3>
+                                    <a href="" class="projects_button button button_small">
+                                        <i class="ri-link"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="projects_card">
+                            <img src="assets/img/SelvaPrint.png" alt="" class="projects_img">
+                            <div class="projects_modal">
+                                <div>
+                                    <span class="projects_subtitle">SelvaApp</span>
+                                    <h3 class="projects_title">Vigilância Ambiental</h3>
+                                    <a href="" class="projects_button button button_small">
+                                        <i class="ri-link"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
                     
 
                     <!--=============== SKILLS ===============-->
-                    
+                    <div class="skills_content grid" data-content id="skills">
+
+                    </div>
+
                 </div>
             </section>
         </main>

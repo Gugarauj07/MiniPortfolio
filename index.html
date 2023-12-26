@@ -14,13 +14,15 @@
         />
 
         <!--=============== CSS ===============-->
-        <link rel="stylesheet" href="assets//css/styles.css">
+        <link rel="stylesheet" href="assets/css/styles.css">
 
         <title>Mini portfolio</title>
     </head>
     <body>
         <!--=============== HEADER PROFILE ===============-->
         <header class="profile container">
+
+            <i class="ri-moon-line change-theme" id="theme-button"></i>
             <div class="profile_container">
                 <div class="profile_data">
                     <div class="profile_border">
@@ -63,7 +65,7 @@
             <section class="filters container">
                 <!--=============== FILTERS TABS ===============-->
                 <ul class="filters_content">
-                    <button class="filters_button" data-target="#projects">
+                    <button class="filters_button filter-tab-active" data-target="#projects">
                         Projetos
                     </button>
                     <button class="filters_button" data-target="#skills">
@@ -73,14 +75,14 @@
 
                 <div class="filters_sections">
                     <!--=============== PROJECTS ===============-->
-                    <div class="projects_content grid" data-content id="projects">
+                    <div class="projects_content grid filters_active" data-content id="projects">
                         <article class="projects_card">
                             <img src="assets/img/GugaHubPrint.png" alt="" class="projects_img">
                             <div class="projects_modal">
                                 <div>
-                                    <span class="projects_subtitle">GugaHub</span>
-                                    <h3 class="projects_title">Social Network</h3>
-                                    <a href="" class="projects_button button button_small">
+                                    <span class="projects_subtitle-light">GugaHub</span>
+                                    <h3 class="projects_title-light">Rede Social</h3>
+                                    <a href="https://github.com/Gugarauj07/GugaHub" class="projects_button button button_small">
                                         <i class="ri-link"></i>
                                     </a>
                                 </div>
@@ -90,9 +92,9 @@
                             <img src="assets/img/LinkNestPrint.png" alt="" class="projects_img">
                             <div class="projects_modal">
                                 <div>
-                                    <span class="projects_subtitle">LinkNest</span>
-                                    <h3 class="projects_title">Compartilhamento de Links</h3>
-                                    <a href="" class="projects_button button button_small">
+                                    <span class="projects_subtitle-dark">LinkNest</span>
+                                    <h3 class="projects_title-dark">Compartilhamento de Links</h3>
+                                    <a href="https://github.com/Gugarauj07/LinkNest" class="projects_button button button_small">
                                         <i class="ri-link"></i>
                                     </a>
                                 </div>
@@ -102,9 +104,21 @@
                             <img src="assets/img/SelvaPrint.png" alt="" class="projects_img">
                             <div class="projects_modal">
                                 <div>
-                                    <span class="projects_subtitle">SelvaApp</span>
-                                    <h3 class="projects_title">Vigilância Ambiental</h3>
-                                    <a href="" class="projects_button button button_small">
+                                    <span class="projects_subtitle-dark">SelvaApp</span>
+                                    <h3 class="projects_title-dark">Vigilância Ambiental</h3>
+                                    <a href="https://github.com/Gugarauj07/SelvaApp" class="projects_button button button_small">
+                                        <i class="ri-link"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="projects_card">
+                            <img src="assets/img/RacingTelemetryPrint.png" alt="" class="projects_img">
+                            <div class="projects_modal">
+                                <div>
+                                    <span class="projects_subtitle-light">RacingTelemetry</span>
+                                    <h3 class="projects_title-light">Visualização de dados</h3>
+                                    <a href="https://github.com/Gugarauj07/RacingTelemetry" class="projects_button button button_small">
                                         <i class="ri-link"></i>
                                     </a>
                                 </div>
@@ -114,8 +128,133 @@
                     
 
                     <!--=============== SKILLS ===============-->
-                    <div class="skills_content grid" data-content id="skills">
-
+                    <div class="skills_content grid " data-content id="skills">
+                        <div class="skills_area">
+                            <h3 class="skills_title">
+                                Frontend
+                            </h3>
+                            <div class="skills_box">
+                                <div class="skills_group">
+                                    <div class="skills_data">
+                                        <i class="ri-checkbox-circle-line"></i>
+                                        <div>
+                                            <h3 class="skills_name">Next.Js</h3>
+                                            <span class="skills_level">Básico</span>
+                                        </div>
+                                    </div>
+                                    <div class="skills_data">
+                                        <i class="ri-checkbox-circle-line"></i>
+                                        <div>
+                                            <h3 class="skills_name">React</h3>
+                                            <span class="skills_level">Avançado</span>
+                                        </div>
+                                    </div>
+                                    <div class="skills_data">
+                                        <i class="ri-checkbox-circle-line"></i>
+                                        <div>
+                                            <h3 class="skills_name">Tailwind</h3>
+                                            <span class="skills_level">Básico</span>
+                                        </div>
+                                    </div>
+                                    <div class="skills_data">
+                                        <i class="ri-checkbox-circle-line"></i>
+                                        <div>
+                                            <h3 class="skills_name">Typescript</h3>
+                                            <span class="skills_level">Intermediário</span>
+                                        </div>
+                                    </div>
+                                    <div class="skills_data">
+                                        <i class="ri-checkbox-circle-line"></i>
+                                        <div>
+                                            <h3 class="skills_name">Bootstrap</h3>
+                                            <span class="skills_level">Intermediário</span>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skills_area">
+                            <h3 class="skills_title">
+                                Backend
+                            </h3>
+                            <div class="skills_box">
+                                <div class="skills_group">
+                                    <div class="skills_data">
+                                        <i class="ri-checkbox-circle-line"></i>
+                                        <div>
+                                            <h3 class="skills_name">Sql</h3>
+                                            <span class="skills_level">Intermediário</span>
+                                        </div>
+                                    </div>
+                                    <div class="skills_data">
+                                        <i class="ri-checkbox-circle-line"></i>
+                                        <div>
+                                            <h3 class="skills_name">Nest.js</h3>
+                                            <span class="skills_level">Básico</span>
+                                        </div>
+                                    </div>
+                                    <div class="skills_data">
+                                        <i class="ri-checkbox-circle-line"></i>
+                                        <div>
+                                            <h3 class="skills_name">Firebase</h3>
+                                            <span class="skills_level">Intermediário</span>
+                                        </div>
+                                    </div>
+                                    <div class="skills_data">
+                                        <i class="ri-checkbox-circle-line"></i>
+                                        <div>
+                                            <h3 class="skills_name">Node.Js</h3>
+                                            <span class="skills_level">Intermediário</span>
+                                        </div>
+                                    </div>
+                                    <div class="skills_data">
+                                        <i class="ri-checkbox-circle-line"></i>
+                                        <div>
+                                            <h3 class="skills_name">Python</h3>
+                                            <span class="skills_level">Avançado</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skills_area">
+                            <h3 class="skills_title">
+                                Ferramentas
+                            </h3>
+                            <div class="skills_box">
+                                <div class="skills_group">
+                                    <div class="skills_data">
+                                        <i class="ri-checkbox-circle-line"></i>
+                                        <div>
+                                            <h3 class="skills_name">Git</h3>
+                                            <span class="skills_level">Intermediário</span>
+                                        </div>
+                                    </div>
+                                    <div class="skills_data">
+                                        <i class="ri-checkbox-circle-line"></i>
+                                        <div>
+                                            <h3 class="skills_name">Docker</h3>
+                                            <span class="skills_level">Básico</span>
+                                        </div>
+                                    </div>
+                                    <div class="skills_data">
+                                        <i class="ri-checkbox-circle-line"></i>
+                                        <div>
+                                            <h3 class="skills_name">Linux</h3>
+                                            <span class="skills_level">Intermediário</span>
+                                        </div>
+                                    </div>
+                                    <div class="skills_data">
+                                        <i class="ri-checkbox-circle-line"></i>
+                                        <div>
+                                            <h3 class="skills_name">Selenium</h3>
+                                            <span class="skills_level">Intermediário</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
 
                 </div>
@@ -124,13 +263,12 @@
 
         <!--=============== FOOTER ===============-->
         <footer class="footer container">
-            
+            <span class="footer_copy">
+                &copy; Gugarauj07
+            </span>
         </footer>
 
-        <!--=============== SCROLLREVEAL ===============-->
-        <script src=""></script>
-
         <!--=============== MAIN JS ===============-->
-        <script src=""></script>
+        <script src="assets/js/main.js"></script>
     </body>
 </html>
